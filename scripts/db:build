@@ -3,5 +3,5 @@
 # stop script when an error occurs
 set -e
 
-psql sessionauthdb -q -f "./src/database/init.sql"
+psql example -q -f "./src/database/init.sql"
 echo "Populated database tables"
