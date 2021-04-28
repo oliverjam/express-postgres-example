@@ -2,7 +2,9 @@
 
 This is an example of how I'd set up a basic Express + Postgres app.
 
-Creation of a local database is automated with two Bash scripts: `scripts/db:setup` and `scripts/db:build`.
+Creation of a local database is automated with two Bash scripts: `scripts/db:setup` and `scripts/db:build`. You can run these via npm scripts: `npm run db:setup` and `npm run db:build`.
+
+If you want to copy these into your own project make sure you change the permissions on each file to make them executable: `chmod +x ./scripts/your-filename`.
 
 The first will create a new Postgres user named "exampleuser" and a new DB named "example". It will also copy the `example.env` file in this repo into a new `.env` file for your server to use. The second will populate it using the schema defined in `database/init.sql`.
 
