@@ -26,7 +26,7 @@ chmod +x ./scripts/your-filename
 
 ## Explanation
 
-The first script takes a single argument: the DB name. It will create a new Postgres user named "${name}user" and a new DB named "${name}". It will also create a new `.env` file containing the `DATABASE_URL` environment variable for your server to use.
+The first script takes a single argument: the DB name. It will create a new Postgres user named `"${name}user"` and a new DB named `"${name}"`. It will also create a new `.env` file containing the `DATABASE_URL` environment variable for your server to use.
 
 The second script will populate the new database using the schema defined in `database/init.sql`.
 
